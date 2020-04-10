@@ -1,11 +1,10 @@
-function generateMarkdown(response) {
+function generateMarkdown(data, result) {
   return `
-# ${response.title}
-[![GitHub License](http://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/davisbradley/readme-generator)
+# ${data.title}
 
 ## Description
 
-${response.description}
+${data.description}
 
 ## Table of Contents
 
@@ -25,31 +24,32 @@ ${response.description}
 
 To install necessary dependencies, run the following command:
 
-${response.installation}
+${data.installation}
 
 ### Usage 
 
-${response.usage}
+${data.usage}
 
 ### License
 
-This project is licensed under the ${response.license} License
+This project is licensed under the ${data.license} License
+[![${data.license} License](http://img.shields.io/badge/licence-${data.license}-blue.svg)]
 
 ### Contributing
 
-${response.contributing}
+${data.contributing}
 
 ### Tests
 
 To run tests, please execute the following command(s):
 
-${response.tests}
+${data.tests}
 
 ### Questions
 
-${response.githubAvatar}<img src="https://avatars3.githubusercontent.com/u/ + " alt="avatar" style="border-radius: 16px" width="30" />}
+${result.avatar_url}
 
-If you have any questions about the repository, open an issue or contact [davisbradleyj](https://api.github.com/users/davisbradleyj) directly at $null.
+If you have any questions about the repository, open an issue or contact [${result.name}](https://api.github.com/users/${result.login}) directly at ${result.email || "NA"}.
 `;
 }
 

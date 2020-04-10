@@ -1,11 +1,8 @@
 const axios = require("axios")
-const api = {
-  getUser(github) {
-    queryURL = `https://api.github.com/users/${github}`
-    axios.get(queryURL)
-      .then(response => console.log(response))
-      .catch(error => console.log(error));
-  }
-};
+const api = function(data) {
+    queryURL = `https://api.github.com/users/${data.github}`
+    return axios.get(queryURL)
+  };
 
 module.exports = api;
+
