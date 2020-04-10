@@ -1,29 +1,29 @@
-# Readme-Generator
-What is your username (github)
-What is the project name? Readme-Generator
-Please write a description of the prjoect? Given a user or client input, this command line application would generate a README file based on the responses to an assortment of question prompts. 
-What kind of license? MIT
-what command should be executed to install dependencies? npm install
-what command should be executed to run applicable tests? ..depends..
-What does the user/client need to know about using the repo? User can clone the repository by typing git clone?
-What does the user client need to know about contributing to repo?
-
-# Readme-Generator
+# ${response.title}
 [![GitHub License](http://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/davisbradley/readme-generator)
 
 ## Description
 
-Given a user or client input, this command line application would generate a README file based on the responses to an assortment of question prompts.
+${response.description}
 
 ## Table of Contents
+
+  * [Installation](#Installation)
+
+  * [Usage](#Usage)
+  
+  * [License](#License)
+  
+  * [Contributing](#Contributing)
+  
+  * [Tests](#Tests)
+  
+  * [Questions](#Questions)
 
 ## Installation
 
 To install necessary dependencies, run the following command:
 
-```
-$(response.installation}
-```
+${response.installation}
 
 ### Usage 
 
@@ -41,10 +41,7 @@ ${response.contributing}
 
 To run tests, please execute the following command(s):
 
-
-```
 ${response.tests}
-```
 
 ### Questions
 
