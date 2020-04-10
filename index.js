@@ -1,7 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-
 const questions = [
     {
         type: "input",
@@ -35,14 +34,13 @@ const questions = [
       },
       {
         type: "input",
-        message: "Who are the other contributors??",
+        message: "Who are the other contributors?",
         name: "contributing"
     }
 ];
 
 inquirer
-    .prompt(questions)
-    .then(function(response){
+    .prompt(questions).then(function(response){
     console.log(response)
 })
 
