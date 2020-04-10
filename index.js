@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios")
+
 
 const questions = [
     {
@@ -55,10 +55,11 @@ function writeToFile(fileName, response) {
     })
 }
 
-
 function init() {
-
 }
+  
+init();
+  
 
 writeToFile("newReadMe.md",response);
 init();
