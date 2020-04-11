@@ -43,7 +43,6 @@ const questions = [
     }
 ];
 
-
 // write md file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (err) {
@@ -53,7 +52,6 @@ function writeToFile(fileName, data) {
         console.log("Success!")
     })
 }
-
 
 function init() {
     // initialize questions
