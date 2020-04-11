@@ -24,16 +24,15 @@ ${data.description}
 
 To install necessary dependencies, run the following command:
 
-${data.installation}
+${data.dependencies}
 
 ### Usage 
 
-${data.usage}
+${data.description}
 
 ### License
 
-This project is licensed under the ${data.license} License
-[![${data.license} License](http://img.shields.io/badge/licence-${data.license}-blue.svg)]
+![${data.license} License](http://img.shields.io/badge/license-${data.license}-blue.svg)
 
 ### Contributing
 
@@ -47,7 +46,7 @@ ${data.tests}
 
 ### Questions
 
-${result.avatar_url}
+<img src="${result.avatar_url}" alt="avatar" style="border-radius: 16px" width="30">
 
 If you have any questions about the repository, open an issue or contact [${result.name}](https://api.github.com/users/${result.login}) directly at ${result.email || "NA"}.
 `;

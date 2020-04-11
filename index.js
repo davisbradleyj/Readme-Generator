@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const api = require("./assets/api.js")
-// const generateMarkdown = require("./assets/generateMarkdown.js")
+const generateMarkdown = require("./assets/generateMarkdown.js")
 
 // add question block x
 // async?  function?
@@ -44,12 +44,16 @@ const questions = [
 ];
 
 
-
 // write md file
 function writeToFile(fileName, data) {
-    fs.writeFile()
-
+    fs.writeFile(fileName, data, function (err) {
+        if (err) {
+            return console.log(err)
+        }
+        console.log("Success!")
+    })
 }
+
 
 function init() {
     // initialize questions
@@ -62,6 +66,7 @@ function init() {
                 // pass data through to markdown, 
                 const las = generateMarkdown(data, result.data)
                 // pass through of markdown to file write
+                console.log(las)
                 writeToFile("example.md", las)
             })
                 // prevent defaults/error handling    
@@ -72,10 +77,7 @@ function init() {
         // prevent defaults/error handling
         .catch(function (err) {
             console.log(err);
-
         })
-    }
-
+}
 init();
-
 

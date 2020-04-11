@@ -46,7 +46,7 @@
   
   ### Questions
   
-  undefined<img src="https://avatars3.githubusercontent.com/u/ + " alt="avatar" style="border-radius: 16px" width="30" />}
+  undefined<img src="https://avatars3.githubusercontent.com/u/ + " 
   
   If you have any questions about the repository, open an issue or contact [davisbradleyj](https://api.github.com/users/davisbradleyj) directly at $null.
   
