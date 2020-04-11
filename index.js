@@ -23,6 +23,11 @@ const questions = [
     },
     {
         type: "input",
+        message: "How does this application work?",
+        name: "usage"
+    },
+    {
+        type: "input",
         message: "What kind of license?",
         name: "license"
     },

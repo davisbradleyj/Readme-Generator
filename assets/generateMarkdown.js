@@ -26,13 +26,13 @@ To install necessary dependencies, run the following command:
 
 ${data.dependencies}
 
-### Usage 
+### Usage
 
-${data.description}
+${data.usage}
 
 ### License
 
-![${data.license} License](http://img.shields.io/badge/license-${data.license}-blue.svg)
+![${data.license} License](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
 ### Contributing
 
